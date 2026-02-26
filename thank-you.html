@@ -22,34 +22,53 @@
 
     <!-- Dark overlay to ensure text is readable over the moss -->
     <div
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(28, 38, 29, 0.55); z-index: -1;">
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(28, 38, 29, 0.6); z-index: -1;">
     </div>
 
-    <!-- Thank You Card -->
-    <div class="fade-in-up"
-        style="max-width: 650px; margin: 20px; padding: 60px 50px; background: rgba(252, 251, 248, 0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,0.2);">
+    <!-- Thank You Content -->
+    <div
+        style="max-width: 650px; margin: 20px; padding: 40px; text-align: center; position: relative; z-index: 1; animation: fadeIn 1s ease forwards;">
 
         <!-- Checkmark Icon -->
         <div
-            style="width: 80px; height: 80px; background-color: var(--color-primary-light); color: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; font-size: 2.5rem;">
+            style="width: 80px; height: 80px; background-color: rgba(255, 255, 255, 0.1); border: 2px solid white; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; font-size: 2.5rem; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
             ✓
         </div>
 
         <h1
-            style="color: var(--color-primary); font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: 20px; line-height: 1.2;">
-            We've received your request!</h1>
+            style="color: white; font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 24px; line-height: 1.1; font-weight: 600; text-shadow: 0 4px 15px rgba(0,0,0,0.4);">
+            Request Received</h1>
 
-        <p style="font-size: 1.15rem; color: var(--color-text); margin-bottom: 20px; line-height: 1.6;">
+        <p
+            style="font-size: 1.2rem; color: rgba(255,255,255,0.95); margin-bottom: 20px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
             Thank you for your interest in bringing the grounding power of nature to your organisation.
         </p>
 
-        <p style="font-size: 1.15rem; color: var(--color-text); margin-bottom: 40px; line-height: 1.6;">
+        <p
+            style="font-size: 1.2rem; color: rgba(255,255,255,0.95); margin-bottom: 40px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
             I will personally review your details and be in touch very shortly to discuss how we can build a calming
             digital space for your team and visitors.
         </p>
 
-        <a href="index.html" class="btn-primary" style="padding: 16px 36px; font-size: 1.1rem;">Return Home</a>
+        <a href="index.html" class="btn-primary"
+            style="padding: 16px 40px; font-size: 1.1rem; background-color: white; color: var(--color-primary); border-color: white; font-weight: 600; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">Return
+            Home</a>
     </div>
+
+    <!-- Simple inline animation -->
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 
 </body>
 
